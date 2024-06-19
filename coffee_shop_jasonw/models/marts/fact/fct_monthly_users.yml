@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: fct_monthly_users
+    description: Counts the number of new customers (defined by their 'first_order_at' date), and presents this at a monthly grain
+    columns:
+      - name: signup_month
+        tests:
+          - unique
+          - not_null
