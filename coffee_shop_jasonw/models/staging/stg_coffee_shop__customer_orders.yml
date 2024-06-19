@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_coffee_shop__customer_orders
+    description: Full list of individual orders at the coffee shop
+    columns:
+      - name: customer_id
+        description: foreign key - unique customer identifier
+        tests:
+          - unique
+          - not_null
