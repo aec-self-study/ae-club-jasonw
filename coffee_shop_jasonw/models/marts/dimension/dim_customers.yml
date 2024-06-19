@@ -5,6 +5,6 @@ models:
     description: Contains information on our customers
     columns:
       - name: customer_id
-      tests:
-        - unique
-        - not_null
+        tests:
+          - unique
+          - not_null
