@@ -1,3 +1,5 @@
+{{ config(materialized='table') }}
+
 select
     order_items.id,
     order_items.order_id,
