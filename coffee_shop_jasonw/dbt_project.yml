@@ -32,8 +32,8 @@ models:
   coffee_shop_jasonw:
     # Config indicated by + and applies to all files under models/example/
     sources:
-      materialized: table
+      +materialized: table
     staging:
-      materialized: table
+      +materialized: table
     marts:
-      materialized: table
+      +materialized: table
