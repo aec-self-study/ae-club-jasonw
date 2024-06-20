@@ -18,7 +18,7 @@ sources:
               - unique
               - not_null
 
-      - name: orders_items
+      - name: order_items
         columns:
           - name: id
             tests:
