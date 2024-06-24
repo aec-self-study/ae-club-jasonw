@@ -5,7 +5,7 @@ with source as (
 renamed as (
     select
         issue_id,
-        actor_id as merge_urder_id,
+        actor_id as merge_user_id,
         
         commit_sha,
 
