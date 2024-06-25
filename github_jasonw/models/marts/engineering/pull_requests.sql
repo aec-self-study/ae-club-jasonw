@@ -22,6 +22,7 @@ select
     pull_request.pull_request_id,
     repositories.name as repo_name,
     issue.number as pull_request_number,
+
     --TO DO: Find out how to label this
     cast(null as string) as type, --(bug, eng, features)
     --TO DO: Find out how to label this
@@ -32,10 +33,9 @@ select
         else 'open'
     end as state,
 
-
     issue.created_at as opened_at,
     issues_merged.merged_at,
-    date_diff(issue.created_at, issues_merged.merged_at, hour) / 24.0 as days_open_to_merge
+    round(date_diff(issues_merged.merged_at, issue.created_at, hour) / 24.0, 2) as days_open_to_merge
 
 from pull_request
 left join repositories
