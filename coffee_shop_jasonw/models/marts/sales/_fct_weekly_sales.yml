@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: fct_weekly_sales
+    description: Splits out sales by week, product category, and whether the customer was a new or returning customer
+    columns:
+      - name: date_week
+      - name: category
+        description: Product category
+      - name: new_vs_returning
+        description: New customer = 1st order; Returning customer = Have previously placed an order
+      - name: sales
+        description: The sum of individual product prices. This may not neccessarily total the sum of the orders total if any discounts have been applied.
