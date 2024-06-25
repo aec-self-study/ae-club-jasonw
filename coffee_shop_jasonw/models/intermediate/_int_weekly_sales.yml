@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: int_weekly_sales
+    description: Intermediate table to enable us to do weekly sales split by category and new vs returning customers
+    columns:
+      - name: order_item_id
+        tests:
+          - unique
+          - not_null
