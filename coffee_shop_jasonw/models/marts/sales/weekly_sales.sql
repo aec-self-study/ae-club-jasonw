@@ -1,8 +1,0 @@
---select
---    date_trunc(orders.created_at, week) as date_week,
---    products.category,
---    case
---        when count(customer_id) = 1 then "New" else "Returning"
---    end as new_vs_returning,
---    sum(orders.sales) as sales
---from weekly_sales
