@@ -10,7 +10,7 @@ renamed as (
 
     select
         id as product_id,
-        name,
+        name as product_name,
         category,
 
         --timestamp
