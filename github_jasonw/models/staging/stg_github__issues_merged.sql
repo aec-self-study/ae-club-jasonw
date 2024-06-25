@@ -10,7 +10,7 @@ renamed as (
         commit_sha,
 
         --timestamps
-        merged_at,
+        merged_at
 
         --_fivetran_synced (excluded column)
     from source
