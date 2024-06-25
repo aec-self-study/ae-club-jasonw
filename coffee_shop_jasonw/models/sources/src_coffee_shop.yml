@@ -5,6 +5,7 @@ sources:
     project: analytics-engineers-club
     tables:
       - name: customers
+        description: "Contains high level, basic customer information"
         columns:
           - name: id
             tests:
@@ -12,6 +13,7 @@ sources:
               - not_null
  
       - name: orders
+        description: "Contains high level, basic information regarding orders"
         columns:
           - name: id
             tests:
@@ -19,6 +21,7 @@ sources:
               - not_null
 
       - name: order_items
+        description: "Contains specific details about each order"
         columns:
           - name: id
             tests:
@@ -26,6 +29,7 @@ sources:
               - not_null
 
       - name: products
+        description: "Identifies which category a product is in, and when it was created"
         columns:
           - name: id
             tests:
@@ -33,6 +37,7 @@ sources:
               - not_null
 
       - name: product_prices
+        description: "Provides the price of a product at any given moment in time"
         columns:
           - name: id
             tests:
